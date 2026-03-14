@@ -11,15 +11,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px 30px; /* Reduced padding for better visibility */
     background-color: rgba(255, 255, 255, 0.95);
-    position: absolute;
+    position: fixed; /* Changed to fixed for better visibility */
     width: 100%;
     z-index: 100;
+    box-sizing: border-box; /* Ensures padding is included in width */
 }
 
 .logo img {
-    height: 50px;
+    height: 40px; /* Adjusted logo size */
 }
 
 nav ul {
@@ -30,43 +31,16 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 30px;
+    margin-left: 20px; /* Reduced margin for better spacing */
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
-/* Hero Section Styles */
-.hero {
-    height: 100vh;
-    background-image: url('hero-background.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-.hero-content {
-    max-width: 800px;
-    padding: 0 20px;
-}
-
-.hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.hero-content h1 {
-    font-size: 4rem;
-    font-weight: 600;
-    margin-top: 0;
-}
 
 /* Tagline Section Styles */
 .tagline {
