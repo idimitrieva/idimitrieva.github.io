@@ -72,7 +72,7 @@ nav ul li a {
 
 /* Hero Section Styles */
 .hero {
-    height: 40vh;
+    height: 60vh;
     background-image: url('hero-background.jpg');
     background-size: cover;
     background-position: center;
