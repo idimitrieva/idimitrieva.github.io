@@ -123,6 +123,7 @@ nav ul li a {
 }
 
 /* Services Section Styles */
+/* Services Section Styles */
 .services-section {
     text-align: center;
     padding: 50px 20px;
@@ -149,30 +150,17 @@ nav ul li a {
     flex: 0 0 auto; /* Prevents items from shrinking */
     background-color: #fff;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px; /* Reduced width for smaller icons */
+    height: 100px; /* Reduced height for smaller icons */
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    white-space: nowrap; /* Prevents text from wrapping */
 }
 
 .service-icon img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
-}
-
-.service-item h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #333;
-    margin: 0;
+    width: 50px; /* Reduced icon size */
+    height: 50px; /* Reduced icon size */
 }
 
 /* Responsive Adjustments */
