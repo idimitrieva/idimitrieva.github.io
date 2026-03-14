@@ -8,15 +8,15 @@ body {
 
 /* Header Styles */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background-color: rgba(255, 255, 255, 0.95);
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    box-sizing: border-box;
+    display: flex; /*Enables flexible alignment of items inside the header.*/
+    justify-content: space-between; /*Aligns logo and menu to opposite edges.  */
+    align-items: center; /*Ensures logo and menu are vertically aligned.  */
+    padding: 1px 2px; /* Prevents content from touching the edges. */
+    background-color: rgba(255, 255, 255, 0.95); /*Sets a semi-transparent white background.*/
+    position: fixed; /* Fixes the header in place during scrolling. */
+    width: 100%; /* Makes the header span the full width of the screen. */
+    z-index: 100; /*  Sets the stacking order of the header.*/
+    box-sizing: border-box; /*Includes padding and border in the element’s width and height.  */
 }
 
 .logo img {
