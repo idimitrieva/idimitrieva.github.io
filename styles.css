@@ -59,19 +59,19 @@ nav ul li a {
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 800px; /*Limits the width of the hero content to 800px for better readability.*/
 }
 
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    font-weight: 300;
+.hero-content p { /*This rule styles all <p> (paragraph) elements inside the .hero-content container*/
+    font-size: 1.2rem; /*Sets the paragraph font size to 1.2 times the base size.*/
+    margin-bottom: 10px; /*Adds 10px space below the paragraph.*/
+    font-weight: 300; /*Makes the paragraph text light (thinner).*/
 }
 
-.hero-content h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-top: 0;
+.hero-content h1 { /*This rule styles all <h1> (heading level 1) elements inside the .hero-content container*/
+    font-size: 3.5rem; /*Sets the heading font size to 2.5 times the base size.*/
+    font-weight: 600; /*Makes the heading semi-bold.*/
+    margin-top: 10; /*Removes any default top margin from the heading.*/
 }
 
 /* Tagline Section Styles */
