@@ -113,3 +113,43 @@ nav ul li a {
         font-size: 1rem;
     }
 }
+/* LinkedIn Articles Section Styles */
+.linkedin-articles {
+    max-width: 800px; /** Limits the width of the articles section for readability */
+    margin: 0 auto; /** Centers the section horizontally */
+    padding: 40px 20px; /** Adds space around the section */
+    font-family: 'Poppins', sans-serif; /** Uses the Poppins font */
+}
+
+.linkedin-articles h2 {
+    font-size: 1.8rem; /** Sets the font size for the section heading */
+    margin-bottom: 30px; /** Adds space below the heading */
+    text-align: center; /** Centers the heading */
+    color: #333; /** Sets the text color */
+}
+
+.linkedin-articles article {
+    margin-bottom: 30px; /** Adds space between articles */
+    padding-bottom: 20px; /** Adds space below each article */
+    border-bottom: 1px solid #eee; /** Adds a light border below each article */
+}
+
+.linkedin-articles h3 {
+    font-size: 1.3rem; /** Sets the font size for article titles */
+    margin-bottom: 10px; /** Adds space below the title */
+}
+
+.linkedin-articles a {
+    color: #0077b5; /** Sets the link color to LinkedIn blue */
+    text-decoration: none; /** Removes underline from links */
+    font-weight: 600; /** Makes the link text semi-bold */
+}
+
+.linkedin-articles a:hover {
+    text-decoration: underline; /** Adds underline on hover for better user interaction */
+}
+
+.linkedin-articles p {
+    color: #666; /** Sets the text color for article summaries */
+    line-height: 1.6; /** Improves readability with line spacing */
+}
