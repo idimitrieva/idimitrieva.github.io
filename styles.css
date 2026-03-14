@@ -44,6 +44,13 @@ header {
         .logo-link:hover {
             opacity: 0.8;
         }
+
+.icon {
+        width: 24px;  /* Adjust the width as needed */
+        height: 24px; /* Adjust the height as needed */
+        display: inline-block; /* Ensures the icon behaves like an inline element */
+    }
+
 /* Navigation Styles */
 nav ul {
     display: flex;
