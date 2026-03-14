@@ -8,7 +8,7 @@ body {
 /* Header Styles */
 header {
     display: flex; /*Enables flexible alignment of items inside the header.*/
-    justify-content: flex-start; /* space-between; /*Aligns logo and menu to opposite edges.  */
+    justify-content: space-between; /*Aligns logo and menu to opposite edges.  */
     align-items: center; /*Ensures logo and menu are vertically aligned.  */
     padding: 15px 20px; /* Prevents content from touching the edges. */
     background-color: #FFFFFF; /*Sets white background.*/
