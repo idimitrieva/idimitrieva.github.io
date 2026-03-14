@@ -11,7 +11,7 @@ header {
     justify-content: flex-start; /* space-between; /*Aligns logo and menu to opposite edges.  */
     align-items: center; /*Ensures logo and menu are vertically aligned.  */
     padding: 15px 20px; /* Prevents content from touching the edges. */
-    /*background-color: rgba(255, 255, 255, 1); /*Sets white background.*/
+    background-color: #FFFFFF; /*Sets white background.*/
     position: fixed; /* Fixes the header in place during scrolling. */
     top: 0; /* Ensures the header is at the very top */
     width: 100%; /* Makes the header span the full width of the screen. */
@@ -126,7 +126,6 @@ nav ul li a {
     }
 }
 
-/* Services Section Styles */
 /* Services Section Styles */
 .services-section {
     text-align: center;
