@@ -121,6 +121,71 @@ nav ul li a {
         font-size: 1rem;
     }
 }
+
+/* Services Section Styles */
+.services-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.services-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto; /* Enables horizontal scrolling on mobile */
+    padding-bottom: 20px; /* Adds space for scrolling */
+    max-width: 100%;
+}
+
+.service-item {
+    flex: 0 0 auto; /* Prevents items from shrinking */
+    background-color: #fff;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.service-icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .services-container {
+        justify-content: flex-start; /* Aligns items to the left for horizontal scrolling */
+    }
+
+    .services-section h2 {
+        font-size: 1.5rem; /* Adjusts heading size for mobile */
+    }
+}
+
 /* LinkedIn Articles Section Styles */
 .linkedin-articles {
     max-width: 800px; /** Limits the width of the articles section for readability */
