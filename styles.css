@@ -11,18 +11,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px; /* Reduced padding for better visibility */
+    padding: 15px 20px;
     background-color: rgba(255, 255, 255, 0.95);
-    position: fixed; /* Changed to fixed for better visibility */
+    position: fixed;
     width: 100%;
     z-index: 100;
-    box-sizing: border-box; /* Ensures padding is included in width */
+    box-sizing: border-box;
 }
 
 .logo img {
-    height: 40px; /* Adjusted logo size */
+    height: 35px;
 }
 
+/* Navigation Styles */
 nav ul {
     display: flex;
     list-style: none;
@@ -31,19 +32,19 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px; /* Reduced margin for better spacing */
+    margin-left: 15px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 /* Hero Section Styles */
 .hero {
-    height: 40vh; /* Reduced height */
+    height: 40vh;
     background-image: url('hero-background.jpg');
     background-size: cover;
     background-position: center;
@@ -52,18 +53,63 @@ nav ul li a {
     justify-content: center;
     text-align: center;
     color: white;
+    margin-top: 60px; /* Adjusted for fixed header */
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 0;
+}
 
 /* Tagline Section Styles */
 .tagline {
     text-align: center;
-    padding: 100px 20px;
+    padding: 40px 20px;
     background-color: #f8f8f8;
 }
 
 .tagline h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 400;
     color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
 }
