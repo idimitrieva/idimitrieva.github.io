@@ -75,13 +75,13 @@ nav ul li a {
 }
 
 .hero-content p { /*This rule styles all <p> (paragraph) elements inside the .hero-content container*/
-    font-size: 1.2rem; /*Sets the paragraph font size to 1.2 times the base size.*/
+    font-size: 2rem; /*Sets the paragraph font size to 1.2 times the base size.*/
     margin-bottom: 1px; /*Adds 10px space below the paragraph.*/
     font-weight: 300; /*Makes the paragraph text light (thinner).*/
 }
 
 .hero-content h1 { /*This rule styles all <h1> (heading level 1) elements inside the .hero-content container*/
-    font-size: 3.5rem; /*Sets the heading font size to 2.5 times the base size.*/
+    font-size: 2rem; /*Sets the heading font size to 2.5 times the base size.*/
     font-weight: 600; /*Makes the heading semi-bold.*/
     margin-top: 1; /*Removes any default top margin from the heading.*/
 }
@@ -94,7 +94,7 @@ nav ul li a {
 }
 
 .tagline h2 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 400;
     color: #333;
 }
@@ -122,7 +122,7 @@ nav ul li a {
     }
 
     .hero-content p {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 }
 
@@ -135,7 +135,7 @@ nav ul li a {
 
 .services-section h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 2rem;
     color: #333;
     margin-bottom: 40px;
 }
@@ -189,7 +189,7 @@ nav ul li a {
 }
 
 .linkedin-articles h2 {
-    font-size: 2.8rem; /** Sets the font size for the section heading */
+    font-size: 2rem; /** Sets the font size for the section heading */
     margin-bottom: 30px; /** Adds space below the heading */
     text-align: center; /** Centers the heading */
     color: #333; /** Sets the text color */
@@ -202,7 +202,7 @@ nav ul li a {
 }
 
 .linkedin-articles h3 {
-    font-size: 1.3rem; /** Sets the font size for article titles */
+    font-size: 2rem; /** Sets the font size for article titles */
     margin-bottom: 10px; /** Adds space below the title */
 }
 
