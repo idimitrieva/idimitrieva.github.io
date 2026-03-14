@@ -81,8 +81,8 @@ nav ul li a {
     justify-content: center;
     text-align: center;
     color: white;
-    margin-top: 40px; /* Adjusted for fixed header */
-    padding: 0 20px;
+    margin-top: 10px; /* Adjusted for fixed header pixel margin at the top of the .hero element. This is typically used to prevent the hero content from being hidden behind a fixed header or navigation bar.*/
+    padding: 0px;
     box-sizing: border-box;
 }
 
