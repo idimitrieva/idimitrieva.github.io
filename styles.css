@@ -179,6 +179,26 @@ nav ul li a {
     }
 }
 
+.responsive-image-container {
+            width: 100%;
+            max-width: 1200px; /* Optional: Limits the maximum width on large screens */
+            margin: 0 auto; /* Centers the container */
+        }
+
+        .responsive-image {
+            width: 50%; /* Half the container width on desktop */
+            height: auto; /* Maintains aspect ratio */
+            display: block; /* Removes extra space below the image */
+            margin: 0 auto; /* Centers the image */
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            .responsive-image {
+                width: 100%; /* Full width on mobile */
+            }
+        }
+
 /* LinkedIn Articles Section Styles */
 .linkedin-articles {
     max-width: 800px; /** Limits the width of the articles section for readability */
