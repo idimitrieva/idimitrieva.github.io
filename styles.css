@@ -74,16 +74,16 @@ nav ul li a {
 .hero {
     height: 60vh;
     background-image: url('hero-background.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    background-size: cover; /*Ensures the background image covers the entire area of the .hero element, maintaining its aspect ratio. The image will be scaled up or down to fill the space, and any excess will be cropped.*/
+    background-position: center; /*Centers the background image both horizontally and vertically within the .hero element. This ensures the focal point of the image is always visible.*/
+    display: flex; /*Turns the .hero element into a flex container. This allows you to use flexbox properties to align and distribute the content inside it.*/
+    align-items: center; /*Aligns all flex items (child elements) vertically in the center of the .hero container. This works because display: flex is enabled.*/
+    justify-content: center; /*Aligns all flex items horizontally in the center of the .hero container. This works in tandem with align-items: center to center content both vertically and horizontally.*/
+    text-align: center; /*Centers the text content (like headings or paragraphs) inside the .hero element. This is useful for centering text that isn’t a flex item.*/
     color: white;
     margin-top: 10px; /* Adjusted for fixed header pixel margin at the top of the .hero element. This is typically used to prevent the hero content from being hidden behind a fixed header or navigation bar.*/
-    padding: 0px;
-    box-sizing: border-box;
+    padding: 0 20px; /*Adds 20 pixels of padding to the left and right sides of the .hero element. The 0 means no padding is added to the top or bottom. This ensures content doesn’t touch the edges of the screen on smaller devices.*/
+    box-sizing: border-box; /*Changes the box model so that padding and border are included in the element’s total width and height. Without this, padding would increase the overall size of the element beyond the specified height and width*/
 }
 
 .hero-content {
