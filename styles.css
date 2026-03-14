@@ -33,7 +33,18 @@ nav {
 .logo img {
     height: 35px;
 }
+.logo-link {
+            display: inline-block;
+        }
 
+        .logo {
+            height: 50px;
+            width: auto;
+        }
+
+        .logo-link:hover {
+            opacity: 0.8;
+        }
 /* Navigation Styles */
 nav ul {
     display: flex;
