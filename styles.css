@@ -18,10 +18,8 @@ header {
     z-index: 100; /*  Sets the stacking order of the header.*/
     box-sizing: border-box; /*Includes padding and border in the element’s width and height.  */
     margin: 0; /* Removes any default margin */
-       
-}
+       }
 
-}
 .logo {
     margin-right: auto; /* Pushes the menu to the middle by taking up available space */
 }
@@ -31,6 +29,7 @@ nav {
     left: 50%; /* Moves the menu to the horizontal center */
     transform: translateX(-50%); /* Adjusts the menu to be truly centered */
 }
+
 .logo img {
     height: 35px;
 }
@@ -50,8 +49,8 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #333;
-    font-weight: 500;
-    font-size: 2rem;
+    font-weight: 300;
+    font-size: 1rem;
 }
 
 /* Hero Section Styles */
