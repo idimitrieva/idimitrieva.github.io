@@ -72,14 +72,14 @@ nav ul li a {
 
 .hero-content p { /*This rule styles all <p> (paragraph) elements inside the .hero-content container*/
     font-size: 1.2rem; /*Sets the paragraph font size to 1.2 times the base size.*/
-    margin-bottom: 10px; /*Adds 10px space below the paragraph.*/
+    margin-bottom: 1px; /*Adds 10px space below the paragraph.*/
     font-weight: 300; /*Makes the paragraph text light (thinner).*/
 }
 
 .hero-content h1 { /*This rule styles all <h1> (heading level 1) elements inside the .hero-content container*/
     font-size: 3.5rem; /*Sets the heading font size to 2.5 times the base size.*/
     font-weight: 600; /*Makes the heading semi-bold.*/
-    margin-top: 10; /*Removes any default top margin from the heading.*/
+    margin-top: 1; /*Removes any default top margin from the heading.*/
 }
 
 /* Tagline Section Styles */
