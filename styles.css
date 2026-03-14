@@ -220,3 +220,36 @@ nav ul li a {
     color: #666; /** Sets the text color for article summaries */
     line-height: 1.6; /** Improves readability with line spacing */
 }
+/* Footer Styles */
+footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 40px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-nav ul li {
+    margin: 0;
+}
+
+.footer-nav ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-nav ul li a:hover {
+    text-decoration: underline;
+}
+
