@@ -18,7 +18,15 @@ header {
     z-index: 100; /*  Sets the stacking order of the header.*/
     box-sizing: border-box; /*Includes padding and border in the element’s width and height.  */
 }
+.logo {
+    margin-right: auto; /* Pushes the menu to the middle by taking up available space */
+}
 
+nav {
+    position: absolute; /* Positions the menu absolutely within the header */
+    left: 50%; /* Moves the menu to the horizontal center */
+    transform: translateX(-50%); /* Adjusts the menu to be truly centered */
+}
 .logo img {
     height: 35px;
 }
