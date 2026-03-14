@@ -116,13 +116,13 @@ nav ul li a {
 /* LinkedIn Articles Section Styles */
 .linkedin-articles {
     max-width: 800px; /** Limits the width of the articles section for readability */
-    margin: 0 auto; /** Centers the section horizontally */
+    margin: 10 auto; /** Centers the section horizontally */
     padding: 40px 20px; /** Adds space around the section */
     font-family: 'Poppins', sans-serif; /** Uses the Poppins font */
 }
 
 .linkedin-articles h2 {
-    font-size: 1.8rem; /** Sets the font size for the section heading */
+    font-size: 2.8rem; /** Sets the font size for the section heading */
     margin-bottom: 30px; /** Adds space below the heading */
     text-align: center; /** Centers the heading */
     color: #333; /** Sets the text color */
@@ -140,7 +140,7 @@ nav ul li a {
 }
 
 .linkedin-articles a {
-    color: #0077b5; /** Sets the link color to LinkedIn blue */
+    color: #666; /** Sets the link color to LinkedIn blue */
     text-decoration: none; /** Removes underline from links */
     font-weight: 600; /** Makes the link text semi-bold */
 }
