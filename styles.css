@@ -53,7 +53,7 @@ nav ul li a {
     justify-content: center;
     text-align: center;
     color: white;
-    margin-top: 60px; /* Adjusted for fixed header */
+    margin-top: 40px; /* Adjusted for fixed header */
     padding: 0 20px;
     box-sizing: border-box;
 }
