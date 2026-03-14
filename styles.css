@@ -20,15 +20,14 @@ header {
     margin: 0; /* Removes any default margin */
        }
 
-.logo {
-    margin-right: auto; /* Pushes the menu to the middle by taking up available space */
-}
+/*.logo {
+    margin-right: auto; /* Pushes the menu to the middle by taking up available space } */
 
-nav {
-    position: absolute; /* Positions the menu absolutely within the header */
-    left: 50%; /* Moves the menu to the horizontal center */
-    transform: translateX(-50%); /* Adjusts the menu to be truly centered */
-}
+/*nav {
+    position: absolute; /* Positions the menu absolutely within the header
+    left: 50%; /* Moves the menu to the horizontal center 
+    transform: translateX(-50%); /* Adjusts the menu to be truly centered 
+}*/
 
 .logo img {
     height: 35px;
