@@ -41,6 +41,19 @@ nav ul li a {
     font-size: 1rem;
 }
 
+/* Hero Section Styles */
+.hero {
+    height: 60vh; /* Reduced height */
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
 
 /* Tagline Section Styles */
 .tagline {
