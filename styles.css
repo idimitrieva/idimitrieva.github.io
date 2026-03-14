@@ -141,6 +141,41 @@ nav ul li a {
         font-size: 2rem;
     }
 }
+/* Paragraph Text Styles */
+/* Style for text paragraphs */
+.text-paragraph {
+    font-size: 1rem; /* Base font size for readability */
+    line-height: 1.6; /* Comfortable line spacing */
+    color: #333; /* Dark gray for better contrast */
+    margin-bottom: 1.5rem; /* Space between paragraphs */
+    padding: 0 15px; /* Padding for mobile readability */
+    max-width: 800px; /* Maximum width for desktop readability */
+    margin-left: auto; /* Center the paragraph block */
+    margin-right: auto; /* Center the paragraph block */
+}
+
+/* Style for h2 headings */
+.text-paragraph h2 {
+    text-align: center; /* Center the h2 headings */
+    font-size: 1.8rem; /* Slightly larger font size for headings */
+    margin-bottom: 1rem; /* Space below the heading */
+    color: #222; /* Slightly darker color for emphasis */
+    font-weight: 600; /* Medium-bold for better visibility */
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .text-paragraph {
+        font-size: 1rem; /* Keep base size, but padding handles mobile */
+        padding: 0 10px; /* Slightly less padding for smaller screens */
+    }
+
+    .text-paragraph h2 {
+        font-size: 1.5rem; /* Slightly smaller heading on mobile */
+    }
+}
+
+
 
 /* Services Section Styles */
 .services-section {
