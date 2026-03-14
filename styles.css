@@ -11,12 +11,17 @@ header {
     display: flex; /*Enables flexible alignment of items inside the header.*/
     justify-content: flex-start; /* space-between; /*Aligns logo and menu to opposite edges.  */
     align-items: center; /*Ensures logo and menu are vertically aligned.  */
-    padding: 1px 2px; /* Prevents content from touching the edges. */
+    padding: 15px 20px; /* Prevents content from touching the edges. */
     background-color: rgba(255, 255, 255, 0.95); /*Sets a semi-transparent white background.*/
     position: fixed; /* Fixes the header in place during scrolling. */
+    top: 0; /* Ensures the header is at the very top */
     width: 100%; /* Makes the header span the full width of the screen. */
     z-index: 100; /*  Sets the stacking order of the header.*/
     box-sizing: border-box; /*Includes padding and border in the element’s width and height.  */
+    margin: 0; /* Removes any default margin */
+       
+}
+
 }
 .logo {
     margin-right: auto; /* Pushes the menu to the middle by taking up available space */
