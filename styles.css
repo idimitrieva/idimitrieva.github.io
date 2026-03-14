@@ -43,7 +43,7 @@ nav ul li a {
 
 /* Hero Section Styles */
 .hero {
-    height: 60vh; /* Reduced height */
+    height: 40vh; /* Reduced height */
     background-image: url('hero-background.jpg');
     background-size: cover;
     background-position: center;
@@ -58,7 +58,7 @@ nav ul li a {
 /* Tagline Section Styles */
 .tagline {
     text-align: center;
-    padding: 50px 20px;
+    padding: 100px 20px;
     background-color: #f8f8f8;
 }
 
