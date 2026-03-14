@@ -148,19 +148,22 @@ nav ul li a {
 
 .service-item {
     flex: 0 0 auto; /* Prevents items from shrinking */
-    background-color: #fff;
-    border-radius: 50%;
-    width: 100px; /* Reduced width for smaller icons */
-    height: 100px; /* Reduced height for smaller icons */
+    width: 150px; /* Width of the circle */
+    height: 150px; /* Height of the circle */
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    width: 150px; /* Full size of the circle */
+    height: 150px; /* Full size of the circle */
 }
 
 .service-icon img {
-    width: 50px; /* Reduced icon size */
-    height: 50px; /* Reduced icon size */
+    width: 100%; /* Fills the circle */
+    height: 100%; /* Fills the circle */
+    object-fit: contain; /* Ensures the image fits within the circle */
 }
 
 /* Responsive Adjustments */
