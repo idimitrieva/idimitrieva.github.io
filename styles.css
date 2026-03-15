@@ -148,6 +148,9 @@ nav ul li a {
 /* Style for text paragraphs
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .text-paragraph {
+    /* Center the entire paragraph block horizontally */
+    margin-left: auto;
+    margin-right: auto; /These properties center the .text-paragraph block horizontally on the page. This works because the element has a defined max-width.*/
     text-align: left; /* Left-align the bio text */
     font-size: 1rem; /* Base font size for readability */
     line-height: 1.6; /* Comfortable line spacing */
