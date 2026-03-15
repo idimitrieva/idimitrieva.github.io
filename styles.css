@@ -291,6 +291,14 @@ nav ul li a {
     text-align: center; /** Centers the heading */
     color: #333; /** Sets the text color */
 }
+.linkedin-articles h3 {
+    font-size: 1.5rem; /** Sets the font size for the section heading */
+    margin-bottom: 30px; /** Adds space below the heading */
+    text-align: center; /** Centers the heading */
+    color: #333; /** Sets the text color */
+}
+    
+    
 /* Article card layout */
 .article-card {
     display: flex;
