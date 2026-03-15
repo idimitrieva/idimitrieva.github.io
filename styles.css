@@ -75,7 +75,7 @@ nav ul li a {
 /* Hero Section Styles 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .hero {
-    height: 60vh;
+    height: 30vh;
     background-image: url('hero-background_1.jpg');
     background-size: cover; /*Ensures the background image covers the entire area of the .hero element, maintaining its aspect ratio. The image will be scaled up or down to fill the space, and any excess will be cropped.*/
     background-position: center; /*Centers the background image both horizontally and vertically within the .hero element. This ensures the focal point of the image is always visible.*/
