@@ -113,7 +113,7 @@ nav ul li a {
 }
 
 .tagline h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #333;
 }
@@ -149,7 +149,7 @@ nav ul li a {
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .text-paragraph {
     text-align: left; /* Left-align the bio text */
-    font-size: 1rem; /* Base font size for readability */
+    font-size: 1.5rem; /* Base font size for readability */
     line-height: 1.6; /* Comfortable line spacing */
     color: #333; /* Dark gray for better contrast */
     margin-bottom: 1.5rem; /* Space between paragraphs */
@@ -162,7 +162,7 @@ nav ul li a {
 /* Style for h2 headings */
 .text-paragraph h2 {
     text-align: center; /* Center the h2 headings */
-    font-size: 1.8rem; /* Slightly larger font size for headings */
+    font-size: 1.5rem; /* Slightly larger font size for headings */
     margin-bottom: 1rem; /* Space below the heading */
     color: #222; /* Slightly darker color for emphasis */
     font-weight: 600; /* Medium-bold for better visibility */
@@ -176,7 +176,7 @@ nav ul li a {
     }
 
     .text-paragraph h2 {
-        font-size: 1.5rem; /* Slightly smaller heading on mobile */
+        font-size: 1.2rem; /* Slightly smaller heading on mobile */
     }
 }
 
@@ -194,7 +194,7 @@ nav ul li a {
 /* Services Section Heading */
 .services-section h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #333;
     margin-bottom: 10px;
 }
