@@ -184,23 +184,28 @@ nav ul li a {
 /* Services Section Styles
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .services-section {
-    text-align: center;
-    padding: 50px 20px;
+    text-align: center;  /* Center-align all text */
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 40px 20px; /* Add padding for spacing */
     background-color: #f9f9f9;
 }
-
+/* Services Section Heading */
 .services-section h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     color: #333;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
-
+/* Services Container */
 .services-container {
     display: flex;
+    margin: 0 auto; /* Center the container */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
     flex-direction: row; /* default: horizontal alignment on desktop */
     align-items: center; /* Center items horizontally */
-    gap: 20px; /*space between items*/
+    gap: 30px; /*space between items*/
     overflow-x: auto; /* Enables horizontal scrolling if needed */
     padding-bottom: 20px;
     max-width: 100%;
@@ -214,7 +219,7 @@ nav ul li a {
     height: 150px;    /* Fixed height for each item */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; /* Center items horizontally */
     cursor: pointer; /* Changes cursor to indicate clickable */
     transition: filter 0.3s ease; /* Smooth transition for hover effect */
 }
