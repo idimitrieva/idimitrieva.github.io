@@ -285,31 +285,71 @@ nav ul li a {
     text-align: center; /** Centers the heading */
     color: #333; /** Sets the text color */
 }
-
+/* Article card layout */
+.article-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    gap: 20px; /* Space between image and content */
+}
+/* Article image styling */
+.article-image {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    /*border-radius: 4px; /* Optional: rounded corners */
+    flex-shrink: 0; /* Prevents image from shrinking */
+}
+/* Article content styling */
+.article-content {
+    flex: 1; /* Takes remaining space */
+    display: flex;
+    flex-direction: column;
+}
 .linkedin-articles article {
     margin-bottom: 30px; /** Adds space between articles */
     padding-bottom: 20px; /** Adds space below each article */
     border-bottom: 1px solid #eee; /** Adds a light border below each article */
 }
 
-.linkedin-articles h3 {
-    font-size: 2rem; /** Sets the font size for article titles */
-    margin-bottom: 10px; /** Adds space below the title */
+/* Article title link styling */
+.article-title-link {
+    color: #0077b5; /* LinkedIn blue */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
 }
 
-.linkedin-articles a {
-    color: #666; /** Sets the link color to LinkedIn blue */
-    text-decoration: none; /** Removes underline from links */
-    font-weight: 600; /** Makes the link text semi-bold */
+.article-title-link:hover {
+    text-decoration: underline;
 }
 
-.linkedin-articles a:hover {
-    text-decoration: underline; /** Adds underline on hover for better user interaction */
+/* Article summary styling */
+.article-summary {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
 }
 
-.linkedin-articles p {
-    color: #666; /** Sets the text color for article summaries */
-    line-height: 1.6; /** Improves readability with line spacing */
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .article-card {
+        flex-direction: column; /* Stack image and content vertically */
+    }
+
+    .article-image {
+        width: 100%; /* Full width on mobile */
+        height: auto;
+    }
+
+    .article-title-link {
+        font-size: 1.1rem; /* Slightly smaller on mobile */
+    }
 }
 
 /* Impressum Page Styles 
