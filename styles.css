@@ -155,8 +155,10 @@ nav ul li a {
     margin-bottom: 1.5rem; /* Space between paragraphs */
     padding: 0 15px; /* Padding for mobile readability */
     max-width: 800px; /* Maximum width for desktop readability */
-    /*margin-left: 0; /*Left alignment*/
-    /*margin-right: auto; /* Center the paragraph block*/
+
+     /* Center the entire paragraph block horizontally */
+    margin-left: auto;
+    margin-right: auto; /These properties center the .text-paragraph block horizontally on the page. This works because the element has a defined max-width.*/
 }
 
 /* Style for h2 headings */
