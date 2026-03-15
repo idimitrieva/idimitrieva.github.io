@@ -148,15 +148,15 @@ nav ul li a {
 /* Style for text paragraphs
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .text-paragraph {
+    text-align: left; /* Left-align the bio text */
     font-size: 1rem; /* Base font size for readability */
     line-height: 1.6; /* Comfortable line spacing */
     color: #333; /* Dark gray for better contrast */
-    text-align: left; /* Left-align the bio text */
     margin-bottom: 1.5rem; /* Space between paragraphs */
     padding: 0 15px; /* Padding for mobile readability */
     max-width: 800px; /* Maximum width for desktop readability */
-    /*margin-left: auto; Center the paragraph block 
-    margin-right: auto; /* Center the paragraph block */
+    margin-left: 0; /*Left alignment*/
+    margin-right: auto; /* Center the paragraph block
 }
 
 /* Style for h2 headings */
