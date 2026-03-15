@@ -149,7 +149,7 @@ nav ul li a {
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .text-paragraph {
     text-align: left; /* Left-align the bio text */
-    font-size: 1.5rem; /* Base font size for readability */
+    font-size: 1rem; /* Base font size for readability */
     line-height: 1.6; /* Comfortable line spacing */
     color: #333; /* Dark gray for better contrast */
     margin-bottom: 1.5rem; /* Space between paragraphs */
