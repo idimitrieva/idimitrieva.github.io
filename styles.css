@@ -155,8 +155,8 @@ nav ul li a {
     margin-bottom: 1.5rem; /* Space between paragraphs */
     padding: 0 15px; /* Padding for mobile readability */
     max-width: 800px; /* Maximum width for desktop readability */
-    margin-left: 0; /*Left alignment*/
-    margin-right: auto; /* Center the paragraph block
+    /*margin-left: 0; /*Left alignment*/
+    /*margin-right: auto; /* Center the paragraph block*/
 }
 
 /* Style for h2 headings */
