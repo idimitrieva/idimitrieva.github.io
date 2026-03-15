@@ -5,7 +5,9 @@ body {
     padding: 0;
     color: #333;
 }
-/* Header Styles */
+
+/* Header Styles 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 header {
     display: flex; /*Enables flexible alignment of items inside the header.*/
     justify-content: space-between; /*Aligns logo and menu to opposite edges.  */
@@ -70,7 +72,8 @@ nav ul li a {
     font-size: 1rem;
 }
 
-/* Hero Section Styles */
+/* Hero Section Styles 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .hero {
     height: 60vh;
     background-image: url('hero-background.jpg');
@@ -141,8 +144,9 @@ nav ul li a {
         font-size: 2rem;
     }
 }
-/* Paragraph Text Styles */
-/* Style for text paragraphs */
+
+/* Style for text paragraphs
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .text-paragraph {
     font-size: 1rem; /* Base font size for readability */
     line-height: 1.6; /* Comfortable line spacing */
@@ -177,7 +181,8 @@ nav ul li a {
 
 
 
-/* Services Section Styles */
+/* Services Section Styles
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .services-section {
     text-align: center;
     padding: 50px 20px;
@@ -257,8 +262,9 @@ nav ul li a {
         width: 100%;
     }
 }
-/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/* LinkedIn Articles Section Styles */
+
+/* LinkedIn Articles Section Styles
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .linkedin-articles {
     max-width: 800px; /** Limits the width of the articles section for readability */
     margin: 10 auto; /** Centers the section horizontally */
@@ -298,7 +304,9 @@ nav ul li a {
     color: #666; /** Sets the text color for article summaries */
     line-height: 1.6; /** Improves readability with line spacing */
 }
-/* Impressum Page Styles */
+
+/* Impressum Page Styles 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .impressum-container {
     max-width: 800px;
     margin: 100px auto 40px;
@@ -334,7 +342,8 @@ nav ul li a {
     text-decoration: underline;
 }
 
-/* Privacy Policy Page Styles */
+/* Privacy Policy Page Styles
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .privacy-container {
     max-width: 800px;
     margin: 100px auto 40px;
@@ -400,7 +409,8 @@ nav ul li a {
     cursor: not-allowed;
 }
 
-/* Footer Styles */
+/* Footer Styles
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 footer {
     background-color: #f9f9f9;
     padding: 20px;
