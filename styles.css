@@ -526,6 +526,8 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
     display: flex;
     align-items: center; /* Center icon and text vertically */
     gap: 10px; /* Space between icon and text */
+    justify-content: center; /* Center the entire item horizontally */
+    width: 100%; /* Ensure the item takes full width for centering */
 }
 
 /* Style for the contact icons */
