@@ -114,8 +114,8 @@ nav ul li a {
 
 .tagline h2 {
     font-size: 1.5rem;
-    font-weight: 400;
-    color: #333;
+    font-weight: 600;
+    color: #194d23; /*dark green*/
 }
 
 /* Responsive Adjustments */
@@ -321,6 +321,7 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
     border-bottom: 1px solid #eee;
     gap: 20px; /* Space between image and content */
 }
+
 /* Article image styling */
 .article-image {
     width: 150px;
@@ -331,6 +332,11 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
     /*border-radius: 4px; /* Optional: rounded corners */
     flex-shrink: 0; /* Prevents image from shrinking */
 }
+
+/* Hover effect for article image */
+.article-image:hover {
+    filter: brightness(0.8); /* Darkens the image on hover */
+    
 /* Article content styling */
 .article-content {
     flex: 1; /* Takes remaining space */
