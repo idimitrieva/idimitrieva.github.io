@@ -367,7 +367,7 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
     }
 
     .article-image {
-        width: 100%; /* Full width on mobile */
+        width: 50%; /* Full width on mobile */
         height: auto;
     }
 
