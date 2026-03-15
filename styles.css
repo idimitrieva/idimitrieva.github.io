@@ -198,48 +198,55 @@ nav ul li a {
 
 .services-container {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: row; /* default: horizontal alignment on desktop */
     align-items: center; /* Center items horizontally */
-    gap: 20px;
-    overflow-y: auto; /* Enables vertical scrolling on mobile */
+    gap: 20px; /*space between items*/
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
     padding-bottom: 20px;
     max-width: 100%;
-    max-height: 500px; /* Optional: Limits height to enable scrolling */
+    /*max-height: 500px;  Optional: Limits height to enable scrolling */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
 }
-
+/* Style for each service item */
 .service-item {
-    flex: 0 0 auto;
-    width: 150px;
-    height: 150px;
+    flex: 0 0 auto;  /* Prevents items from shrinking */
+    width: 150px;     /* Fixed width for each item */
+    height: 150px;    /* Fixed height for each item */
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer; /* Changes cursor to indicate clickable */
     transition: filter 0.3s ease; /* Smooth transition for hover effect */
 }
-
+/* Hover effect for service items */
 .service-item:hover {
     filter: brightness(0.8); /* Darkens the item on hover */
 }
 
+/* Circle shape for service icons */
 .service-icon {
     width: 150px;
     height: 150px;
     border-radius: 50%; /* Makes the container a circle */
     overflow: hidden; /* Ensures the image stays within the circle */
 }
-
+/* Image styling */
 .service-icon img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: contain; /* Ensures the image fits within the circle */
 }
 
-/* Responsive Adjustments */
+/* Responsive adjustments for mobile */
 @media (max-width: 768px) {
     .services-container {
         flex-direction: column; /* Ensures vertical stacking on mobile */
+        align-items: center; /* Center items horizontally */
         max-height: 400px; /* Adjust height for mobile scrolling */
+        overflow-y: auto; /* Enable vertical scrolling if needed */
+    }
+    .service-item {
+        margin-bottom: 15px; /* Add space between stacked items */
     }
 }
 
