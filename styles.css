@@ -294,13 +294,13 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
 }
 
 .linkedin-articles h2 {
-    font-size: 2rem; /** Sets the font size for the section heading */
+    font-size: 1.2rem; /** Sets the font size for the section heading */
     margin-bottom: 30px; /** Adds space below the heading */
     text-align: center; /** Centers the heading */
     color: #333; /** Sets the text color */
 }
 .linkedin-articles h3 {
-    font-size: 1.5rem; /** Sets the font size for the section heading */
+    font-size: 1.2rem; /** Sets the font size for the section heading */
     margin-bottom: 30px; /** Adds space below the heading */
     text-align: center; /** Centers the heading */
     color: #333; /** Sets the text color to dark grey */
@@ -387,7 +387,7 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
 }
 
 .impressum-container h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     color: #333;
 }
