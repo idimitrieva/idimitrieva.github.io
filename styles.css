@@ -242,6 +242,14 @@ nav ul li a {
     height: 100%;
     object-fit: contain; /* Ensures the image fits within the circle */
 }
+/* object-fit Values
+fill - Stretches the image to fill the container, ignoring aspect ratio (may distort the image).
+contain - Scales the image to fit within the container, maintaining aspect ratio (no cropping).
+cover - Scales the image to cover the container, maintaining aspect ratio (may crop the image).
+none - The image retains its original size and aspect ratio (may overflow or underfill the container).
+scale-down - Behaves like none or contain, whichever results in a smaller image.
+*/
+
 
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
@@ -311,8 +319,10 @@ nav ul li a {
 /* Article image styling */
 .article-image {
     width: 150px;
-    height: 200px;
-    object-fit: cover;
+    height: 150px;
+    object-fit: contain;/* Ensures the image fits within the box */
+    width: 100%;
+    height: 100%;
     /*border-radius: 4px; /* Optional: rounded corners */
     flex-shrink: 0; /* Prevents image from shrinking */
 }
