@@ -321,8 +321,8 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
     width: 150px;
     height: 150px;
     object-fit: contain;/* Ensures the image fits within the box */
-    width: 100%;
-    height: 100%;
+    /*width: 100%;
+    height: 100%;*/
     /*border-radius: 4px; /* Optional: rounded corners */
     flex-shrink: 0; /* Prevents image from shrinking */
 }
