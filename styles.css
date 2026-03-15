@@ -550,24 +550,30 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
 .contact-item span {
     color: #333;
 }
+/* Button style (moved from HTML) */
+.libutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7px;
+    text-align: center;
+    outline: none;
+    text-decoration: none !important;
+    color: #ffffff !important;
+    width: 200px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #0A66C2;
+    font-family: "SF Pro Text", Helvetica, sans-serif;
+}
 
-  .libutton {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 7px;
-        text-align: center;
-        outline: none;
-        text-decoration: none !important;
-        color: #ffffff !important;
-        width: 200px;
-        height: 32px;
-        border-radius: 16px;
-        background-color: #0A66C2;
-        font-family: "SF Pro Text", Helvetica, sans-serif;              
-        }
-        
-
+/* Center the button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+    
 /* Footer Styles
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 footer {
