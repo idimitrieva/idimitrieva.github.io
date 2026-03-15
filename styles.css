@@ -100,7 +100,7 @@ nav ul li a {
 }
 
 .hero-content h1 { /*This rule styles all <h1> (heading level 1) elements inside the .hero-content container*/
-    font-size: 2rem; /*Sets the heading font size to 2.5 times the base size.*/
+    font-size: 3rem; /*Sets the heading font size to 2.5 times the base size.*/
     font-weight: 600; /*Makes the heading semi-bold.*/
     margin-top: 1; /*Removes any default top margin from the heading.*/
 }
