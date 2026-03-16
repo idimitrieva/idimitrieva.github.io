@@ -578,6 +578,12 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
 /* Footer Styles
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* Footer Styles */
+
+ .footer-wrapper {
+    display: flex;
+    justify-content: center; /* Centers the footer container */
+    width: 100%;
+}   
 .footer-container {
     display: flex;
     justify-content: space-between; /* Pushes left and right elements to opposite ends */
@@ -606,9 +612,5 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
     font-size: 14px;
 }
 
-.footer-wrapper {
-    display: flex;
-    justify-content: center; /* Centers the footer container */
-    width: 100%;
-}
+
 
