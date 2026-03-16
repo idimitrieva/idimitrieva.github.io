@@ -577,6 +577,7 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
     
 /* Footer Styles
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Footer Styles */
 .footer-container {
     display: flex;
     justify-content: space-between; /* Pushes left and right elements to opposite ends */
@@ -586,8 +587,12 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
     font-family: Arial, sans-serif; /* Optional: Match your site's font */
 }
 
+.footer-left {
+    display: flex; /* Aligns links horizontally */
+    gap: 20px; /* Adds space between links */
+}
+
 .footer-left a {
-    margin-right: 20px; /* Adds space between links */
     color: #333; /* Optional: Match your site's color scheme */
     text-decoration: none;
 }
@@ -600,4 +605,5 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
     color: #666; /* Optional: Match your site's color scheme */
     font-size: 14px;
 }
+
 
