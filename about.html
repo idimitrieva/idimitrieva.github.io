@@ -2,9 +2,26 @@
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- {% include head.html %}
+ <head>
+        <script>
+            // Load head.html
+            fetch('_includes/head.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML += data;
+                });
+        </script>
+    </head>
     <body>
-        {% include header.html %}
+        <div id="header"></div>
+        <script>
+            // Load header.html
+            fetch('_includes/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        </script>
  
 <main>
  
