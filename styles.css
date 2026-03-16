@@ -612,6 +612,18 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
     margin: 20px auto; /* Add margin to separate it from other elements */
     width: 100%; /* Ensure the container takes full width */
 }
+
+    /* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .text-paragraph {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .text-paragraph h2 {
+        font-size: 1.2rem;
+    }
+}
     
 /* Footer Styles
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
