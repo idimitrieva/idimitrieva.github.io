@@ -584,7 +584,7 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
     align-items: center; /* Vertically centers items */
     width: 100%; /* Takes full width of the container */
     padding: 10px 20px; /* Optional: Add padding for spacing */
-    font-family: Arial, sans-serif; /* Optional: Match your site's font */
+    font-family: 'Poppins', sans-serif; /** Uses the Poppins font */
 }
 
 .footer-left {
