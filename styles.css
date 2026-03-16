@@ -589,7 +589,7 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
 }
 /* Button style (moved from HTML) */
 .libutton {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
     padding: 7px;
@@ -602,6 +602,10 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
     border-radius: 16px;
     background-color: #0A66C2;
     font-family: "SF Pro Text", Helvetica, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 auto; /* Center the button horizontally */
+    border: none; /* Remove any default border */
 }
 
 /* Center the button container */
