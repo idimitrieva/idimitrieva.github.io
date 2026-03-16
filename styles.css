@@ -151,6 +151,32 @@ nav ul li a {
 .text-paragraph {
     /* Center the entire paragraph block horizontally */
     margin-left: auto;
+    margin-right: auto; /*These properties center the .text-paragraph block horizontally on the page. This works because the element has a defined max-width.*/
+    text-align: left; /* Left-align the bio text */
+    font-size: 1rem; /* Base font size for readability */
+    line-height: 1.6; /* Comfortable line spacing */
+    color: #333; /* Dark gray for better contrast */
+    margin-bottom: 1.5rem; /* Space between paragraphs */
+    padding: 0 15px; /* Padding for mobile readability */
+    max-width: 800px; /* Maximum width for desktop readability */
+
+     /* Center the entire paragraph block horizontally */
+    margin-left: auto;
+    margin-right: auto; /These properties center the .text-paragraph block horizontally on the page. This works because the element has a defined max-width.*/
+}
+
+/* Style for h2 headings */
+.text-paragraph h2 {
+    text-align: center; /* Center the h2 headings */
+    font-size: 1.5rem; /* Slightly larger font size for headings */
+    margin-bottom: 1rem; /* Space below the heading */
+    color: #222; /* Slightly darker color for emphasis */
+    font-weight: 600; /* Medium-bold for better visibility */
+}
+
+.text-paragraph {
+    /* Center the entire paragraph block horizontally */
+    margin-left: auto;
     margin-right: auto; /These properties center the .text-paragraph block horizontally on the page. This works because the element has a defined max-width.*/
     text-align: left; /* Left-align the bio text */
     font-size: 1rem; /* Base font size for readability */
@@ -174,6 +200,14 @@ nav ul li a {
     font-weight: 600; /* Medium-bold for better visibility */
 }
 
+.text-paragraph h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #222;
+    font-weight: 600;
+}
+
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
     .text-paragraph {
@@ -184,8 +218,10 @@ nav ul li a {
     .text-paragraph h2 {
         font-size: 1.2rem; /* Slightly smaller heading on mobile */
     }
+    .text-paragraph h3 {
+        font-size: 1rem; /* Slightly smaller heading on mobile */
+    }
 }
-
 
 
 /* Services Section Styles
@@ -571,8 +607,10 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
 /* Center the button container */
 .button-container {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the button horizontally */
     margin-top: 10px;
+    margin: 20px auto; /* Add margin to separate it from other elements */
+    width: 100%; /* Ensure the container takes full width */
 }
     
 /* Footer Styles
