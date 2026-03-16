@@ -2,17 +2,9 @@
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <script>
-        // Load head and header
-        fetch('_includes/head-and-header.html')
-            .then(response => response.text())
-            .then(data => {
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(data, 'text/html');
-                document.head.innerHTML = doc.head.innerHTML;
-                document.body.insertAdjacentHTML('afterbegin', doc.body.innerHTML);
-            });
-    </script>
+ {% include head.html %}
+    <body>
+        {% include header.html %}
  
 <main>
  
