@@ -76,9 +76,10 @@ nav ul li a {
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .hero {
     height: 50vh;
-    background-image: url('hero-background_1.jpg');
+    background-image: url('images/hero-background_1.jpg');
     background-size: cover; /*Ensures the background image covers the entire area of the .hero element, maintaining its aspect ratio. The image will be scaled up or down to fill the space, and any excess will be cropped.*/
     background-position: center; /*Centers the background image both horizontally and vertically within the .hero element. This ensures the focal point of the image is always visible.*/
+    background-repeat: no-repeat; /* Prevents the image from repeating */
     display: flex; /*Turns the .hero element into a flex container. This allows you to use flexbox properties to align and distribute the content inside it.*/
     align-items: center; /*Aligns all flex items (child elements) vertically in the center of the .hero container. This works because display: flex is enabled.*/
     justify-content: center; /*Aligns all flex items horizontally in the center of the .hero container. This works in tandem with align-items: center to center content both vertically and horizontally.*/
