@@ -606,4 +606,9 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
     font-size: 14px;
 }
 
+.footer-wrapper {
+    display: flex;
+    justify-content: center; /* Centers the footer container */
+    width: 100%;
+}
 
