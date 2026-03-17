@@ -672,6 +672,8 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
 .footer p {
     margin: 0;
     color: #666;
+    margin: 0 auto;
+    text-align: center;
     font-size: 14px;
 }
 
