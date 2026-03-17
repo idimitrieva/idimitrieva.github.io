@@ -54,11 +54,12 @@ header {
     }
 
 /* Navigation Styles */
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+nav ul {                                     /* This targets all <ul> (unordered list) elements inside a <nav> element. */
+    display: flex;                           /* Turns the <ul> into a flex container, making its children (<li> elements) align in a row by default. */
+    list-style: none;                        /* Removes the default bullet points from the list. */
+    margin: 0;                               /* Removes any default margin around the <ul>. */
+    padding: 0;                              /* Removes any default padding inside the <ul>.*/
+
 }
 
 nav ul li {
