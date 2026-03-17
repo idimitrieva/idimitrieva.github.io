@@ -645,7 +645,7 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
 
 .footer-content {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -669,13 +669,6 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
     text-decoration: underline;
 }
 
-.footer p {
-    margin: 0;
-    color: #666;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 14px;
-}
 
 
 
