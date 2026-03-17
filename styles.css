@@ -639,8 +639,7 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
     padding: 20px 0;
     text-align: center;
     margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0
     font-family: 'Poppins', sans-serif;
 }
 
