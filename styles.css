@@ -654,6 +654,8 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
 
 .footer-links {
     margin-top: 10px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .footer-links a {
