@@ -646,6 +646,7 @@ scale-down - Behaves like none or contain, whichever results in a smaller image.
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
