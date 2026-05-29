@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ECB Climate & Nature Risk — Good Practices for Smaller Banks</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@600;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0D1B3E;
+    --blue: #1A4F9C;
+    --blue-light: #E8EFF9;
+    --green: #1A6B45;
+    --green-light: #E6F4ED;
+    --amber: #A05A00;
+    --amber-light: #FFF3DC;
+    --purple: #4A2F8A;
+    --purple-light: #EEE9F9;
+    --gray-100: #F4F4F2;
+    --gray-200: #E5E4DF;
+    --gray-400: #9B9A94;
+    --gray-700: #3D3D3A;
+    --text: #1A1A18;
+    --muted: #5C5C58;
+    --border: #D6D5CF;
+  }
+
+  html { font-size: 10px; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    background: #fff;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 14mm 14mm 12mm;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* HEADER */
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    gap: 12px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--navy);
+    margin-bottom: 11px;
+  }
+  .header-kicker {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 3px;
+  }
+  .header h1 {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.2;
+  }
+  .header-meta {
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+  .badge-ecb {
+    background: var(--navy);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: .05em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  /* INTRO NOTE */
+  .intro-note {
+    background: var(--blue-light);
+    border-left: 3px solid var(--blue);
+    padding: 7px 10px;
+    font-size: 0.82rem;
+    color: var(--navy);
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 11px;
+    line-height: 1.4;
+  }
+  .intro-note strong { font-weight: 600; }
+
+  /* LAYOUT: 3 columns then 2 columns */
+  .col3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 9px; margin-bottom: 9px; }
+  .col2 { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-bottom: 9px; }
+  .col4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 9px; margin-bottom: 9px; }
+
+  /* PILLAR CARDS */
+  .pillar {
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    overflow: hidden;
+  }
+  .pillar-head {
+    padding: 6px 9px 5px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .pillar-icon {
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+  }
+  .pillar-title {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .pillar-body { padding: 7px 9px 8px; }
+
+  .item {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    font-size: 0.8rem;
+    color: var(--gray-700);
+    margin-bottom: 5px;
+    line-height: 1.35;
+  }
+  .item:last-child { margin-bottom: 0; }
+  .item-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.62rem;
+    font-weight: 700;
+  }
+  .item strong { font-weight: 600; color: var(--text); }
+
+  /* Blue — strategy */
+  .p-blue .pillar-head { background: var(--blue-light); }
+  .p-blue .pillar-title { color: var(--blue); }
+  .p-blue .item-dot { background: var(--blue-light); color: var(--blue); border: 1px solid #b3caed; }
+
+  /* Green — governance */
+  .p-green .pillar-head { background: var(--green-light); }
+  .p-green .pillar-title { color: var(--green); }
+  .p-green .item-dot { background: var(--green-light); color: var(--green); border: 1px solid #a8d9bf; }
+
+  /* Amber — risk mgmt */
+  .p-amber .pillar-head { background: var(--amber-light); }
+  .p-amber .pillar-title { color: var(--amber); }
+  .p-amber .item-dot { background: var(--amber-light); color: var(--amber); border: 1px solid #f0c980; }
+
+  /* Purple — nature */
+  .p-purple .pillar-head { background: var(--purple-light); }
+  .p-purple .pillar-title { color: var(--purple); }
+  .p-purple .item-dot { background: var(--purple-light); color: var(--purple); border: 1px solid #c4b3e8; }
+
+  /* Navy — ICAAP */
+  .p-navy .pillar-head { background: #E5E8F0; }
+  .p-navy .pillar-title { color: var(--navy); }
+  .p-navy .item-dot { background: #E5E8F0; color: var(--navy); border: 1px solid #b8c1d4; }
+
+  /* PROGRESS BAR SECTION */
+  .progress-section {
+    background: var(--gray-100);
+    border-radius: 7px;
+    padding: 8px 10px;
+    margin-bottom: 9px;
+  }
+  .progress-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .prog-row { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .prog-row:last-child { margin-bottom: 0; }
+  .prog-year { font-size: 0.75rem; font-weight: 600; color: var(--muted); width: 28px; flex-shrink: 0; }
+  .prog-track { flex: 1; height: 16px; border-radius: 4px; overflow: hidden; display: flex; }
+  .prog-seg { height: 100%; display: flex; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 700; }
+
+  /* MATURITY LADDER */
+  .ladder {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 9px;
+  }
+  .rung {
+    padding: 7px 9px;
+    border-right: 1px solid var(--border);
+  }
+  .rung:last-child { border-right: none; }
+  .rung-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin-bottom: 3px;
+  }
+  .rung-items { font-size: 0.75rem; color: var(--gray-700); line-height: 1.4; }
+  .r-nothing .rung-label { color: #b02020; }
+  .r-basic .rung-label { color: var(--amber); }
+  .r-emerging .rung-label { color: #1A6B45; }
+  .r-leading .rung-label { color: var(--navy); }
+  .r-nothing { background: #FFF5F5; }
+  .r-basic { background: var(--amber-light); }
+  .r-emerging { background: var(--green-light); }
+  .r-leading { background: var(--blue-light); }
+
+  /* FOOTER */
+  .footer {
+    border-top: 1px solid var(--border);
+    padding-top: 7px;
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.72rem;
+    color: var(--gray-400);
+  }
+  .footer strong { color: var(--muted); font-weight: 600; }
+
+  /* SECTION LABEL */
+  .sec-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+
+  @media print {
+    body { margin: 0; padding: 14mm 14mm 12mm; }
+    .pillar { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div>
+    <div class="header-kicker">ECB Supervisory Good Practices · 2026 Edition</div>
+    <h1>Climate &amp; Nature Risk Management<br>for Smaller Banks</h1>
+    <div class="header-meta">Proportionate framework based on ECB Good Practices Compendium (May 2026) · Single Supervisory Mechanism</div>
+  </div>
+  <div class="badge-ecb">ECB · SSM<br>May 2026</div>
+</div>
+
+<!-- INTRO NOTE -->
+<div class="intro-note">
+  <strong>Proportionality note:</strong> These practices are drawn from ECB-observed good practices and calibrated for smaller, less complex institutions. The ECB explicitly states that practices should be applied "taking into account proportionality, materiality and institution-specific circumstances." Many newly added practices in the 2026 edition were specifically observed at smaller institutions.
+</div>
+
+<!-- MATURITY CONTEXT -->
+<div class="progress-section">
+  <div class="progress-title">Sector maturity — SSM institutions (for context)</div>
+  <div class="prog-row">
+    <div class="prog-year">2022</div>
+    <div class="prog-track">
+      <div class="prog-seg" style="width:25%;background:#E24B4A;color:#fff">25% none</div>
+      <div class="prog-seg" style="width:54%;background:#EF9F27;color:#fff">54% basic</div>
+      <div class="prog-seg" style="width:18%;background:#5DCAA5;color:#085041">18% emerging</div>
+      <div class="prog-seg" style="width:3%;background:#1D9E75;color:#fff">3%</div>
+    </div>
+  </div>
+  <div class="prog-row">
+    <div class="prog-year">2024</div>
+    <div class="prog-track">
+      <div class="prog-seg" style="width:5%;background:#E24B4A;color:#fff">5%</div>
+      <div class="prog-seg" style="width:17%;background:#EF9F27;color:#fff">17% basic</div>
+      <div class="prog-seg" style="width:22%;background:#5DCAA5;color:#085041">22% emerging</div>
+      <div class="prog-seg" style="width:56%;background:#1D9E75;color:#fff">56% leading practices</div>
+    </div>
+  </div>
+</div>
+
+<!-- WHERE A SMALL BANK SHOULD AIM -->
+<div class="sec-label">Target maturity for smaller banks — aim for "Emerging" across all 5 pillars</div>
+<div class="ladder">
+  <div class="rung r-nothing">
+    <div class="rung-label">❌ Nothing in place</div>
+    <div class="rung-items">No policies, no identification of C&amp;N risks, no governance owner. Not acceptable under EBA ESG Guidelines (from Jan 2026).</div>
+  </div>
+  <div class="rung r-basic">
+    <div class="rung-label">🟡 Basic — minimum floor</div>
+    <div class="rung-items">Sectoral exclusion policies; board oversight; transmission channels identified; EPC-based collateral haircuts; initial data collection.</div>
+  </div>
+  <div class="rung r-emerging">
+    <div class="rung-label">🟢 Emerging — target state</div>
+    <div class="rung-items">Client-level due diligence; KRIs in risk appetite; C&amp;N in credit pricing; first nature-risk identification; audit coverage.</div>
+  </div>
+  <div class="rung r-leading">
+    <div class="rung-label">🔵 Leading — aspirational</div>
+    <div class="rung-items">ICAAP integration; counterparty simulation; nature capital adequacy; extended-horizon capital projections.</div>
+  </div>
+</div>
+
+<!-- 5 PILLARS -->
+<div class="sec-label">Five pillars — proportionate good practices for smaller banks</div>
+
+<div class="col3">
+
+  <!-- PILLAR 1: BUSINESS STRATEGY -->
+  <div class="pillar p-blue">
+    <div class="pillar-head">
+      <div class="pillar-icon" style="background:var(--blue);color:#fff">📊</div>
+      <div class="pillar-title">1. Business strategy</div>
+    </div>
+    <div class="pillar-body">
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Materiality-first:</strong> Identify the sectors and geographies where C&amp;N risks are most material to your portfolio before setting targets.</span>
+      </div>
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Simple targets:</strong> Set near-term (2025–2030) portfolio-level targets for your highest-risk sectors (e.g. reduce coal exposure by X%).</span>
+      </div>
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Client engagement:</strong> Define a clear process for engaging clients with high C&amp;N risk: enhanced monitoring → dialogue → exit if unresponsive.</span>
+      </div>
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Transition products:</strong> Offer at least one green/transition finance product with clear eligibility criteria (e.g. energy renovation loans).</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PILLAR 2: GOVERNANCE -->
+  <div class="pillar p-green">
+    <div class="pillar-head">
+      <div class="pillar-icon" style="background:var(--green);color:#fff">🏛</div>
+      <div class="pillar-title">2. Governance &amp; risk appetite</div>
+    </div>
+    <div class="pillar-body">
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Board ownership:</strong> Management body formally responsible for C&amp;N risk strategy; reviewed at least annually.</span>
+      </div>
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Named owner:</strong> Appoint a C&amp;N risk coordinator (need not be a dedicated role at a small bank — can sit in risk or sustainability function).</span>
+      </div>
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>KRIs in RAF:</strong> At least 2–3 quantitative key risk indicators (e.g. share of fossil fuel exposure, % of collateral in flood zones) with defined limits.</span>
+      </div>
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Audit coverage:</strong> Internal audit plan includes at least one C&amp;N risk-related review per year.</span>
+      </div>
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Incentives:</strong> Link at least one C&amp;N KPI to variable pay for relevant senior staff.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PILLAR 3: RISK MANAGEMENT -->
+  <div class="pillar p-amber">
+    <div class="pillar-head">
+      <div class="pillar-icon" style="background:var(--amber);color:#fff">⚖️</div>
+      <div class="pillar-title">3. Risk management</div>
+    </div>
+    <div class="pillar-body">
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Due diligence:</strong> Embed C&amp;N risk screening in new client onboarding (exclusion check, sector/geography flags, questionnaire for material counterparties).</span>
+      </div>
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Credit risk:</strong> Adjust credit ratings/scores for counterparties with high transition or physical risk exposure (sector flags at a minimum).</span>
+      </div>
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Collateral:</strong> Apply EPC-label-based haircuts to real estate collateral; use geolocation data to identify properties in high flood/heat zones.</span>
+      </div>
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Physical risk:</strong> Map your real estate collateral portfolio to flood and heat hazard maps (free via Copernicus / national hazard tools).</span>
+      </div>
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Pricing:</strong> Reflect C&amp;N risk in loan pricing — at minimum a spread add-on for high-risk sectors.</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="col2">
+
+  <!-- PILLAR 4: NATURE RISKS -->
+  <div class="pillar p-purple">
+    <div class="pillar-head">
+      <div class="pillar-icon" style="background:var(--purple);color:#fff">🌿</div>
+      <div class="pillar-title">4. Nature-related risks (starting point)</div>
+    </div>
+    <div class="pillar-body">
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Identify exposures:</strong> Use ENCORE or TNFD tools to map which sectors in your portfolio depend heavily on ecosystem services (water, soil, pollination). Focus on agriculture, real estate, food &amp; beverage.</span>
+      </div>
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Sectoral policy:</strong> Establish at least one nature-specific policy — e.g. no financing of deforestation in primary forests, or lending criteria for agricultural clients referencing water use.</span>
+      </div>
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Due diligence flag:</strong> Add a nature-risk flag to the credit due diligence checklist for sectors identified as having material nature dependencies or impacts.</span>
+      </div>
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Proportionate scope:</strong> Qualitative assessment is acceptable at this stage. No quantitative modelling expected for smaller banks. Document methodology and data gaps clearly.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PILLAR 5: ICAAP / DATA -->
+  <div class="pillar p-navy">
+    <div class="pillar-head">
+      <div class="pillar-icon" style="background:var(--navy);color:#fff">📋</div>
+      <div class="pillar-title">5. ICAAP &amp; data infrastructure</div>
+    </div>
+    <div class="pillar-body">
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>ICAAP narrative:</strong> Include a qualitative C&amp;N risk section in ICAAP addressing how risks are identified, assessed and whether they are material enough to require a capital buffer.</span>
+      </div>
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Data collection:</strong> Systematically collect EPC labels, sector NACE codes and geolocation for collateral as a minimum data foundation. Use vendor data as a proxy where unavailable.</span>
+      </div>
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Internal reporting:</strong> Produce a brief C&amp;N risk dashboard for the management body at least twice a year covering KRI status, materiality findings and any limit breaches.</span>
+      </div>
+      <div class="item">
+        <div class="item-dot">✓</div>
+        <span><strong>Free tools:</strong> Use open-source data — Copernicus Climate Change Service (physical hazard maps), ECB's own NACE-sector risk guides, ENCORE web tool (nature risk), national EPC registries.</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <span><strong>Source:</strong> ECB Good Practices for Climate and Nature Risk Management, May 2026 · EBA Guidelines on ESG Risk Management (applicable from Jan 2026)</span>
+  <span><strong>Not supervisory guidance.</strong> Proportionality and materiality apply.</span>
+</div>
+
+</body>
+</html>
